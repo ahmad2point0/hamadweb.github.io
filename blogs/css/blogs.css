@@ -35,8 +35,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 40px 20px;
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
-              url("../Images/blog-bg.jpg") no-repeat center center/cover;
   min-height: 100vh;
 }
 
@@ -85,17 +83,6 @@
 .blog-post a:hover {
   color: var(--haccent);
   text-decoration: underline;
-}
-
-.blog-image {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  margin: 20px auto;
-  border-radius: 8px;
-  object-fit: cover;
-  display: block;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Key Points Styling */
@@ -155,7 +142,7 @@
 }
 
 .highlights li {
-  color: var(--textaccent2);
+  color: var (--textaccent2);
   font-size: 1.1rem;
   margin-bottom: 10px;
   position: relative;
@@ -213,4 +200,49 @@
 
 .customer-reviews blockquote:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0,)}
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .blog-container {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .blog-posts {
+    min-width: 100%;
+    margin-right: 0;
+  }
+
+  .blog-post {
+    padding: 20px;
+  }
+
+  .blog-post h2 {
+    font-size: 1.5rem;
+  }
+
+  .blog-post p {
+    font-size: 1rem;
+  }
+
+  .key-points h3,
+  .highlights h3,
+  .customer-reviews h3 {
+    font-size: 1.3rem;
+  }
+
+  .key-points li,
+  .highlights li {
+    font-size: 1rem;
+  }
+
+  .customer-reviews h3 {
+    font-size: 1.5rem;
+  }
+
+  .customer-reviews blockquote {
+    padding: 15px;
+  }
+}
