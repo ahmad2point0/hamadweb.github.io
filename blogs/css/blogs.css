@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-style: none;
+}
+
+:root {
+  --txtaccent: #fff;
+  --txtaccent1: #9d9d9f;
+  --textaccent2: #73757e;
+  --textaccent3: #484848;
+  --txtaccent4: #000;
+  --txtaccent5: #e5e5e5;
+  --haccent: #ffcb0f;
+  --haccent_withOpacity: rgba(255, 203, 15, 0.6);
+  --haccent2: #c79e23;
+  --bgaccent: #1a1c27;
+  --bgaccent_withOpacity: rgba(26, 28, 39, 0.96);
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 16px;
+  color: var(--txtaccent4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
+              url("../Images/blog-bg.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+}
+
+.blog-posts {
+  flex: 1;
+  min-width: 60%;
+  margin-right: 30px;
+}
+
+.blog-post {
+  background: #ffffff;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--textaccent3);
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.blog-post p {
+  color: var(--textaccent2);
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.blog-post a {
+  color: var(--haccent2);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.blog-post a:hover {
+  color: var(--haccent);
+  text-decoration: underline;
+}
+
+.blog-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Key Points Styling */
+.key-points {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 5px solid var(--haccent);
+}
+
+.key-points h3 {
+  color: var(--textaccent3);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.key-points ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.key-points li {
+  color: var(--textaccent2);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.key-points li:before {
+  content: "✔";
+  color: var(--haccent);
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* Highlights Styling */
+.highlights {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f0f4f8;
+  border-radius: 8px;
+  border-left: 5px solid var(--haccent2);
+}
+
+.highlights h3 {
+  color: var(--textaccent3);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.highlights ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.highlights li {
+  color: var(--textaccent2);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.highlights li:before {
+  content: "★";
+  color: var(--haccent2);
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* Customer Reviews Styling */
+.customer-reviews {
+  margin-top: 40px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.customer-reviews h3 {
+  color: var(--textaccent3);
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.customer-reviews h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: var(--haccent);
+  border-radius: 2px;
+}
+
+.customer-reviews blockquote {
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
+  padding: 20px;
+  margin: 0 0 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.customer-reviews blockquote:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0,)}
